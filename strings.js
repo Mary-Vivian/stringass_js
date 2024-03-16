@@ -7,15 +7,15 @@ console.log({characters:a[11]});
 
 // Insert string at the fourth index
 
- const food="The quick fox jumps over the lazy dog";
- let foodnew="The \"eat\"quick fox jumps over the lazy dog ";
- console.log({foodnew});
+  const food="The quick fox jumps over the lazy dog";
+  let foodnew="The \eat\quick fox jumps over the lazy dog ";
+  console.log({foodnew});
 
 
 // counting how many times the strings appear
  const story="The quick brown fox over the lazy dog";
-console.log((story.match(/the/g)).length);
-console.log((story.match(/brown/g)).length);
+console.log((story.match(/\bthe\b/g)).length);
+console.log((story.match(/\b brown\b/g)).length);
 
 // // finding words from a string
 let string2="The pupils are reading in the libary"
